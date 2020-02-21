@@ -18,16 +18,8 @@ output "cluster_password" {
   value = "${google_container_cluster.primary.master_auth.0.password}"
 }
 
-output "master_auth" {
-  value = "${google_container_cluster.primary.master_auth_raw}"
-}
-
 output "host" {
-  value = "${google_container_cluster.primary.master_auth.0.host}"
-}
-
-output "node_resource_group" {
-  value = "${google_container_cluster.primary.node_resource_group}"
+  value = "${google_container_cluster.primary.endpoint}"
 }
 
 output "cluster_name" {

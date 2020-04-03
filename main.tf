@@ -7,8 +7,12 @@ resource "google_container_cluster" "primary" {
     initial_node_count          = 1
 
     master_auth {
+
+        username = "admin123"
+        password = "test123"
+
         client_certificate_config {
-            issue_client_certificate = true
+            issue_client_certificate = false
         }
     }
 }

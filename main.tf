@@ -8,8 +8,11 @@ resource "google_container_cluster" "primary" {
 
     master_auth {
 
+        username = "admin123"
+        password = "passwordneed16zeichen"
+
         client_certificate_config {
-            issue_client_certificate = true
+            issue_client_certificate = false
         }
     }
 }

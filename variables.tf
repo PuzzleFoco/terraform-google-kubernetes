@@ -21,7 +21,7 @@ variable "location" {
 
 
 variable "node_count" {
-    description = "The count of VMs for the AKS"
+    description = "The count of VMs for the GKE"
     default     = 1
 }
 

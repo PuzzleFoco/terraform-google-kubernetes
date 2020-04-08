@@ -3,7 +3,7 @@ resource "google_container_cluster" "primary" {
     location = var.location
     project  = var.project
 
-    remove_default_node_pool    = true
+    remove_default_node_pool    = false
     initial_node_count          = 1
 
     master_auth {

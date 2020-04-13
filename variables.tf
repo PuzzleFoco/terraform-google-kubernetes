@@ -33,3 +33,9 @@ variable "machine_type" {
 variable "project" {
     type = string
 }
+
+variable "min_master_version" {
+    description = "The minimum version of the master"
+    type        = string
+    default     = "1.14.10-gke.27"
+}

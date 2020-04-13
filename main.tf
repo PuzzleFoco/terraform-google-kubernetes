@@ -5,6 +5,7 @@ resource "google_container_cluster" "primary" {
 
     remove_default_node_pool    = false
     initial_node_count          = var.node_count
+    min_master_version          = var.min_master_version
 
     master_auth {
 

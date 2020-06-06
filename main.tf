@@ -9,8 +9,8 @@ resource "google_container_cluster" "primary" {
 
     master_auth {
 
-        username = "admin123"
-        password = "passwordneed16zeichen"
+        username = var.username
+        password = var.password
 
         client_certificate_config {
             issue_client_certificate = true
@@ -18,7 +18,7 @@ resource "google_container_cluster" "primary" {
     }
 
     node_config {
-        preemptible     = true
+        preemptible  = true
         machine_type = var.machine_type
 
         oauth_scopes = [

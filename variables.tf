@@ -39,3 +39,15 @@ variable "min_master_version" {
     type        = string
     default     = "1.14.10-gke.27"
 }
+
+variable "username" {
+    description = "username of the kubernetes cluster"
+    type = string
+    default = "admin123"
+}
+
+variable "password" {
+    description = "password of the kubernetes cluster"
+    type = string
+    default = "passwordneed16zeichen"
+}

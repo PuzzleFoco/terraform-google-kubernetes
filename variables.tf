@@ -26,7 +26,7 @@ variable "project" {
 variable "min_master_version" {
     description = "The minimum version of the master"
     type        = string
-    default     = "1.14.10-gke.27"
+    default     = "1.16.9-gke.6"
 }
 
 variable "username" {
